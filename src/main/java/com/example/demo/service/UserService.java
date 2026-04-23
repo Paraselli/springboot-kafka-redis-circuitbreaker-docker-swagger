@@ -1,3 +1,16 @@
+package com.example.demo.service;
+
+import com.example.demo.entity.User; // or model.User
+import com.example.demo.repository.UserRepository;
+
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
+import lombok.RequiredArgsConstructor;
+
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class UserService {
