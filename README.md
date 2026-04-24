@@ -1,105 +1,148 @@
-# 🚀 Spring Boot Kafka Redis Circuit Breaker Microservices
+# 🚀 Spring Boot Kafka Redis Docker Platform
 
-A production-ready **microservices-based backend system** built using **Spring Boot, Kafka, Redis, Resilience4j, Docker, and Swagger**.
-This project demonstrates **event-driven architecture**, **fault tolerance**, and **scalable cloud-native design**.
-
----
-
-## 🧩 Tech Stack
-
-* **Backend**: Spring Boot, Spring Cloud
-* **Messaging**: Apache Kafka
-* **Caching**: Redis
-* **Resilience**: Resilience4j (Circuit Breaker)
-* **Containerization**: Docker, Docker Compose
-* **API Docs**: Swagger (OpenAPI)
-* **CI/CD**: Jenkins
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
+![Kafka](https://img.shields.io/badge/Kafka-EventDriven-black)
+![Redis](https://img.shields.io/badge/Redis-Caching-red)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
 
 ---
 
-## ⚙️ Features
+## ⚡ What is this?
 
-* ✅ Event-driven microservices using Kafka
-* ✅ Circuit Breaker implementation using Resilience4j
-* ✅ Redis caching for performance optimization
-* ✅ REST APIs with Swagger documentation
-* ✅ Dockerized services for easy deployment
-* ✅ CI/CD pipeline with Jenkins
+A **containerized backend system** demonstrating:
 
----
-
-## 🏗️ Architecture
-
-* Microservices communicate asynchronously via **Kafka**
-* **Redis** used for caching frequently accessed data
-* **Resilience4j** ensures fault tolerance using Circuit Breaker pattern
-* Services are containerized using **Docker**
+* REST APIs using Spring Boot  
+* Database operations using Hibernate (JPA)  
+* Event-driven communication using Kafka  
+* High-performance caching using Redis  
+* Fully dockerized environment for easy setup  
 
 ---
 
-## 🚀 Getting Started
+## 🧠 Why this project matters
 
-### 1️⃣ Clone the repository
+This is NOT just a CRUD app.
 
-```bash
-git clone https://github.com/Paraselli/springboot-kafka-redis-circuitbreaker-docker-swagger.git
-cd springboot-kafka-redis-circuitbreaker-docker-swagger
-```
+It demonstrates:
 
----
-
-### 2️⃣ Start services using Docker
-
-```bash
-docker-compose up -d
-```
+* Event-driven architecture using Kafka  
+* Performance optimization using Redis caching  
+* Clean backend layering (Controller → Service → Repository)  
+* Containerized deployment using Docker  
+* Real-world backend integration patterns  
 
 ---
 
-### 3️⃣ Run the application
+## 🏗️ Architecture Overview
 
-```bash
-mvn clean install
-mvn spring-boot:run
-```
-
----
-
-## 📡 API Documentation
-
-Once the app is running:
-
-👉 Swagger UI:
-
-```
-http://localhost:8080/swagger-ui.html
-```
+Client (Postman / UI)  
+↓  
+Spring Boot REST API  
+↓  
+Service Layer (Business Logic)  
+↓  
+Kafka Producer → Event Streaming → Kafka Consumer  
+↓  
+Redis (Caching with TTL)  
+↓  
+MySQL (Persistent Storage)  
+↓  
+Docker (Containerized Environment)
 
 ---
 
-## 🔥 Use Cases
+## 🔥 Key Features
 
-* Real-time event processing
-* High-throughput microservices
-* Fault-tolerant distributed systems
-* Scalable backend architecture
+* 🔐 REST API with clean architecture  
+* ⚡ Kafka-based async communication  
+* 🧠 Redis caching with TTL  
+* 🗄️ MySQL with Hibernate (JPA)  
+* 🐳 Dockerized setup  
+* 📦 Scalable backend design  
 
 ---
 
-## 📌 Future Enhancements
+## 🛠 Tech Stack
 
-* Add Kubernetes deployment (AKS/EKS)
-* Implement distributed tracing (Zipkin)
-* Add authentication (OAuth2/JWT)
+| Layer     | Technologies           |
+| --------- | ---------------------- |
+| Backend   | Java 17, Spring Boot   |
+| ORM       | Hibernate (JPA)        |
+| Messaging | Kafka                  |
+| Cache     | Redis                  |
+| Database  | MySQL                  |
+| DevOps    | Docker                 |
+
+---
+
+## 🚀 Quick Start
+
+git clone https://github.com/Paraselli/springboot-hibernate-kafka-redis-docker.git  
+cd springboot-hibernate-kafka-redis-docker  
+docker-compose up --build  
+
+---
+
+## 🔄 Flow Overview
+
+1. Client sends API request  
+2. Controller processes request  
+3. Service layer handles business logic  
+4. Data stored in MySQL via Hibernate  
+5. Event published to Kafka  
+6. Consumer processes event  
+7. Redis caches frequently accessed data  
+
+---
+
+## 📊 GitHub Stats
+
+![GitHub followers](https://img.shields.io/github/followers/Paraselli?label=Followers\&style=social)
+![GitHub stars](https://img.shields.io/github/stars/Paraselli?affiliations=OWNER%2CCOLLABORATOR\&style=social)
+
+---
+
+## 🧠 Skills Demonstrated
+
+* Event-Driven Architecture (Kafka)  
+* Backend Engineering with Spring Boot  
+* Caching Strategy (Redis)  
+* Database Design with Hibernate  
+* Containerization (Docker)  
+* System Design Thinking  
+
+---
+
+## 💼 Portfolio Highlight
+
+### Spring Boot Kafka Redis Platform
+
+* Designed a scalable backend system  
+* Implemented Kafka for async communication  
+* Used Redis for performance optimization  
+* Built containerized environment using Docker  
+* Demonstrated production-level backend architecture  
 
 ---
 
 ## 👨‍💻 Author
 
 **Ram Paraselli**
-🔗 linkedin.com/in/ram-paraselli
-🔗 github.com/Paraselli
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/ram-paraselli)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/Paraselli)
 
 ---
 
-## ⭐ If you like this project, give it a star!
+## ⭐ Support
+
+If you like this project:
+
+⭐ Star the repo  
+🍴 Fork and explore  
+🚀 Share with others  
+
+---
